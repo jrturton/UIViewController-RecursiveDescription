@@ -10,6 +10,6 @@
 
 @interface UIViewController (RecursiveDescription)
 
--(void)recursiveDescription;
+-(NSString*)recursiveDescription;
 
 @end

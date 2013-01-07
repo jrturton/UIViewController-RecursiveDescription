@@ -10,11 +10,11 @@
 
 @implementation UIViewController (RecursiveDescription)
 
--(void)recursiveDescription
+-(NSString*)recursiveDescription
 {
     NSMutableString *description = [NSMutableString stringWithFormat:@"\n"];
     [self addDescriptionToString:description indentLevel:0];
-    NSLog(@"%@",description);
+    return description;
 }
 
 -(void)addDescriptionToString:(NSMutableString*)string indentLevel:(NSInteger)indentLevel
